@@ -25,10 +25,8 @@ const styles = StyleSheet.create({
         paddingBottom: 5,
     },
     action: {
-        // alignItems: "center",
         flexDirection: "row",
-        marginTop: 10,
-        paddingBottom: 5,
+        marginVertical: 10,
     },
     textInput: {
         flex: 1,
@@ -40,7 +38,6 @@ const styles = StyleSheet.create({
         borderLeftColor: "grey",
         borderTopLeftRadius: 10,
         borderBottomLeftRadius: 10,
-        marginTop: Platform === "ios" ? 0 : -6,
         paddingHorizontal: 10,
         color: "grey",
         paddingVertical: 4,
@@ -48,6 +45,18 @@ const styles = StyleSheet.create({
     },
     btnApplyCoupon: {
         backgroundColor: "grey",
+        alignItems: "center",
+        borderTopEndRadius: 10,
+        borderBottomRightRadius: 10,
+        paddingHorizontal: 10,
+        paddingVertical: 10,
+    },
+    btnPayNow: {
+        backgroundColor: "#931f1d", 
+        alignItems: 'center', 
+        paddingVertical: 10, 
+        borderRadius: 20,
+        marginVertical: 30,
     }
 });
 

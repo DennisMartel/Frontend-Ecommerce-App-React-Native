@@ -5,7 +5,7 @@ const styles = StyleSheet.create({
         justifyContent: "space-between",
         flexDirection: "row",
         paddingVertical: 10,
-        paddingHorizontal: 5,
+        paddingHorizontal: 20,
         backgroundColor: "#fff",
         marginBottom: 10,
         borderRadius: 4.65,
@@ -25,6 +25,7 @@ const styles = StyleSheet.create({
         borderColor: "#f0f7ee",
     },
     cartCardContent: {
+        marginHorizontal: 6,
         flexDirection: "column",
     },
     productName: {
