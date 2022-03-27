@@ -7,6 +7,7 @@ import Categories from '../views/Categories/Categories';
 import Cart from '../views/Cart/Cart';
 import Account from '../views/Account/Account';
 import Search from '../views/Search/Search';
+import Login from '../views/Login/Login';
 
 const Tab = createBottomTabNavigator();
 
@@ -40,10 +41,10 @@ const BottomTabs = () => {
 
     return (
         <Tab.Navigator
-            initialRouteName='Home'
+            initialRouteName='Mi Cuenta'
             screenOptions={({ route }) => ({
                 tabBarActiveTintColor: "#d63230",
-                tabBarInactiveTintColor: "#000",
+                tabBarInactiveTintColor: "grey",
                 tabBarStyle: {backgroundColor: "#fff"},
                 tabBarIcon: ({ color }) => screensOptions(route, color),
                 headerShown: false
@@ -53,7 +54,7 @@ const BottomTabs = () => {
             <Tab.Screen options={{ title:'Categorias' }} name='Categorias' component={Categories}/>
             <Tab.Screen options={{ title:'Buscar' }} name='Buscar' component={Search}/>
             <Tab.Screen options={{ title:'Mi Carrito' }} name='Mi Carrito' component={Cart}/>
-            <Tab.Screen options={{ title:'Mi Cuenta' }} name='Mi Cuenta' component={Account}/>
+            <Tab.Screen options={{ title:'Mi Cuenta' }} name='Mi Cuenta' component={Login}/>
         </Tab.Navigator>
     )
 }
